@@ -66,7 +66,7 @@ class CopyCsFiles implements PluginInterface, EventSubscriberInterface
             if (!in_array($file, $this->filesToCopy)) {
                 continue;
             }
-            // Copies from vendor/cc-coding-standards/<file>
+            // Copies from vendor/coding-standards/<file>
             // to ./<file> to ensure latest version is present.
             copy(
                 join(DIRECTORY_SEPARATOR, [$packagePath, DIRECTORY_SEPARATOR, $file]),

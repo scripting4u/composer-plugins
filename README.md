@@ -20,9 +20,22 @@ This requires changes in the command to perform a check if the file exists in th
 
 ## Requires 
 - `"php": "^8.0"`
-- `"scripting4u/coding-standards": "^1"`
+- `"scripting4u/coding-standards": "^1.0.1"`
 
 ## Setup
-- `composer require scripting4u/composer-plugins`
 
+add to composer file:
+```json
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/scripting4u/composer-plugins"
+        }
+    ]
+}
+```
 
+```php
+composer require --dev "scripting4u/composer-plugins:^1.0.1"
+```
