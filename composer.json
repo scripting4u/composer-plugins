@@ -5,7 +5,7 @@
     "license": "MIT",
     "minimum-stability": "stable",
     "require": {
-        "composer-plugin-api": "^2.7",
+        "composer-plugin-api": "^2",
         "scripting4u/coding-standards": "^1.0.1"
     },
     "require-dev": {
