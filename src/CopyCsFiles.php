@@ -19,6 +19,7 @@ class CopyCsFiles implements PluginInterface, EventSubscriberInterface
     public const CODING_STANDARD_PACKAGE = 'scripting4u/coding-standards';
 
     public array $filesToCopy = [
+        'phpcs.xml',
         'phpmd.xml',
         'phpstan.neon',
         'grumphp.yml'
