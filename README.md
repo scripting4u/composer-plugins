@@ -10,6 +10,7 @@ Currently registered events:
 
 `\Scripting4U\ComposerPlugins\CopyCsFiles`
 After `composer install` has been ran, it copies the following set of files
+ - `phpcs.xml`
  - `phpmd.xml`
  - `phpstan.neon`
  - `grumphp.yml`
@@ -20,22 +21,10 @@ This requires changes in the command to perform a check if the file exists in th
 
 ## Requires 
 - `"php": "^8.0"`
-- `"scripting4u/coding-standards": "^1.0.1"`
+- `"scripting4u/coding-standards": "^2"`
 
 ## Setup
 
-add to composer file:
-```json
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "https://github.com/scripting4u/composer-plugins"
-        }
-    ]
-}
-```
-
 ```php
-composer require --dev "scripting4u/composer-plugins:^1.0.1"
+composer require --dev "scripting4u/composer-plugins:^2"
 ```
